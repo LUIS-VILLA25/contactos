@@ -35,16 +35,16 @@ function onDeviceReady2() {
     // create
   
     var contact = navigator.contacts.create();
-    contact.displayName = "Prueba";
+    contact.displayName = "PruebaContact";
     contact.nickname = "prueba";                 
     var name = new ContactName();
-    name.givenName = "Prueba";
+    name.givenName = "PruebaContact";
     name.familyName = "Programacion";
     contact.name = name;
     var phoneNumbers = [];
-    phoneNumbers[0] = new ContactField('work', '488-106-1452', false);
-    phoneNumbers[1] = new ContactField('mobile', '488-102-1236', true); // preferred number
-    phoneNumbers[2] = new ContactField('home', '488-145-7896', false);
+    phoneNumbers[0] = new ContactField('work', '488-145-2119', false);
+    phoneNumbers[1] = new ContactField('mobile', '488-100-0970', true); // preferred number
+    phoneNumbers[2] = new ContactField('home', '488-123-8134', false);
 myContact.phoneNumbers = phoneNumbers;
     // save
     contact.save(onSaveSuccess2,onSaveError2);
@@ -79,7 +79,7 @@ function onRemoveError(contactError) {
 </script>  
 </head>  
 <body >  
-    <h1>Hola Muñeco. Esta es mi agenda para que me apartes:</h1>  
+    <h1>Hola MuÃ±eco. Esta es mi agenda para que me apartes:</h1>  
    
 </from>
     <button onclick="init()">Listar contacto</button>
